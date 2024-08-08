@@ -1,8 +1,5 @@
 body {
     padding: 0;
     margin: 0;
-}
-
-h1 {
-    color: red;
+    font-family: "Roboto", Verdana, sans-serif;
 }
