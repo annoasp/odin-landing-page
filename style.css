@@ -1,5 +1,102 @@
 body {
+    font-family: "Roboto", Verdana, sans-serif; /* requested font of Roboto as first choice, with Verdana as a web-safe option and sans-serif as the fallback. */
+}
+
+ul {
+    list-style-type: none; /* removes list bullets. */
+}
+
+a {
+    text-decoration: none; /* removes link underlining. */
+}
+
+/* Colour Choices */
+
+body {
+    background-color: white;
+}
+
+.header,
+.hero,
+.footer {
+    background-color: #1F2937; /*included header as well. Perhaps the instructions indicate that both the header and hero section would be contained in one combined element, but I've chosen to separate them for flex purposes. */
+}
+
+.hero,
+.footer,
+a,
+.action-subtext {
+    color: #E5E7EB /* footer text and call to action secondary text not mentioned in instructions but they seem to match the appearance of the other two. */
+}
+
+.header-logo,
+.hero-title,
+.action-title,
+button {
+    color: #F9FAF8 /* the brightest text on the page */
+}
+
+.info,
+.quote {
+    color: #1F2937
+}
+
+button,
+.action-container {
+    background-color: #3882F6;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+/* Font Sizing */
+
+body {
+    font-size: 18px; /* only specified for hero secondary text, but looking at the example image it seems to match the smallest size used throughout the page. I can then increase size of other font elements as needed. */
+}
+
+.header-logo,
+.quote-author,
+.action-title {
+    font-size: 24px; /* only specified for header logo in instructions, but the other two seem to match */
+}
+
+.hero-title {
+    font-size: 48px;
+}
+
+.info-title,
+.quote-text {
+    font-size: 36px;
+}
+
+/* Font styling */
+
+.header-logo,
+.hero-title,
+.info-title,
+.quote-author {
+    font-weight: 900; /* all the most impactful text on the page. */
+}
+
+.quote-text {
+    font-style: italic;
+    font-weight: 200; /* since light was asked for, not extra-light */
+}
+
+/* Flexboxes and Positioning */
+
+body {
     padding: 0;
     margin: 0;
-    font-family: "Roboto", Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
